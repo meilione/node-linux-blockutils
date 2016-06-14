@@ -48,7 +48,7 @@ exports.getBlockInfo = function(options,callback) {
 
   // Build the command line
   var cmd = (options.lsblk?options.lsblk:"/bin/lsblk") + 
-      " -bPo NAME,KNAME,FSTYPE,LABEL,UUID,RO,RM,MODEL,SIZE,STATE,TYPE" +
+      " -bPo NAME,KNAME,FSTYPE,LABEL,UUID,RO,RM,MODEL,SIZE,STATE,TYPE,MOUNTPOINT" +
       ignoremajor;
 
   // Run it
